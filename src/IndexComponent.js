@@ -3,7 +3,7 @@ import './App.css';
 
 import { BrowserRouter, Switch, Route } from "react-router-dom" 
 import LoginComponent from "./LoginComponent"
-import RegisterComponent from "./RegisterComponent"
+import RegisterComponent from "./RegisterComponent" 
 import QuizComponent from "./QuizComponent"
 
 
