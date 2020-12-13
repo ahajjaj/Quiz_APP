@@ -18,7 +18,7 @@ export class LoginComponent extends React.Component {
     e.preventDefault();
     var username = e.target.elements.username.value;
     var password = e.target.elements.password.value;
-    if (username == 'abc' && password == '123') {
+    if (username == 'dada' && password == '123') {
       this.props.history.push('/quiz/' + username);
     } else {
       this.setState({
@@ -37,14 +37,20 @@ export class LoginComponent extends React.Component {
         <form method="post" onSubmit={this.login.bind(this)}>
           Username <input type="text" name="username" />
           <br />
-          Password <input type="text" name="password" />
+          Password <input type="password" name="password" />
           <br />
           <input type="submit" value="Login" />
-
         </form>
       </div>
     )
+    return (
+      <div>
+        <h3>Sign Up</h3>
+          <input type="submit" value="Register" />
+      </div>
+    )
   }
+  
 }
 
 export default LoginComponent
