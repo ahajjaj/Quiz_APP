@@ -1,19 +1,6 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import Quiz from './Quiz'
-import {Login} from './Login'
+import React from 'react';
+import ReactDOM from 'react-dom';
 
-import './App.css';
-import { QuizData } from './QuizData';
+import IndexComponent from './IndexComponent';
 
-function App() {
-    return (
-        <div className="App">
-            <Quiz />
-            <Login />
-        </div>
-    )
-}
-
-const rootElement = document.getElementById('root');
-ReactDOM.render(<App></App>, rootElement) 
+ReactDOM.render(<IndexComponent></IndexComponent>, document.getElementById('root'));

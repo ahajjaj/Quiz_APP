@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import {QuizData} from './QuizData';
+import {QuizData} from './QuizData'
+import Pic from './pic_man.png'
 
-class Quiz extends Component {
+class QuizComponent extends Component {
 state = {
     userAnswer:null,
     currentIndex:0,
@@ -76,14 +77,21 @@ state = {
                 quizEnd:true
             })
         }
+    }
 
+    logout() {
+        this.props.history.push('/logout/');
     }
 
     render() {
         const {question, options, currentIndex, userAnswer, quizEnd} = this.state // obtenir l'état actuel      
         if(quizEnd) {
-            return (
+            const {username} = this.props.match.params
+            return (           
                 <div>
+                <h1>Welcome {username} </h1>
+                <button onClick={this.logout.bind(this)}>Logout</button>
+                <br />  
                     <h1>Game Over. Final score is {this.state.score} points</h1>
                     <p>The correct Answers for the quiz are</p>
                     <ul>
@@ -97,11 +105,15 @@ state = {
                 </div>
             )
         }
-               
+        const {username} = this.props.match.params
         return (
             <div>
+               <h1>Welcome {username} </h1>
+               <button onClick={this.logout.bind(this)}>Logout</button>
+               <br />
                <h2>{question}</h2>
                 <span>{`Question ${currentIndex+1} of ${QuizData.length}`}</span>
+                <img src={Pic} />
                 {options.map(option => (  // pour chaque option, nouveau paragraphe
                     <p key={option.id} 
                     className={`options ${userAnswer === option ? "selected" : null}`}
@@ -129,4 +141,4 @@ state = {
     }
 }
 
-export default Quiz
+export default QuizComponent
