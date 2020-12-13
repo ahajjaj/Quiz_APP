@@ -9,7 +9,7 @@ export const QuizData = [
         id: 1,
         question: `Question 2 ?`,
         options: [`Reponse 1`, `Reponse 2`, `Reponse 3`, `Reponse 4`],
-        answer: `Reponse 2`
+        answer: `Reponse 2` 
     },
     {
         id: 2,

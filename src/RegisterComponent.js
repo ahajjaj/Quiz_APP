@@ -1,6 +1,6 @@
 import React from "react";
 
-export class RegisterComponent extends React.Component {
+export class RegisterComponent extends React.Component { 
   constructor(props) {
     super(props);
   }
@@ -11,7 +11,7 @@ export class RegisterComponent extends React.Component {
         <div className="header">Register</div>
         <div className="content">
 
-          <div className="form">
+          <div className="form"> 
             <div className="form-group">
               <label htmlFor="username">Username</label>
               <input type="text" name="username" placeholder="username" />

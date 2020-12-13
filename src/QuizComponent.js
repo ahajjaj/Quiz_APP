@@ -2,14 +2,14 @@ import React, { Component } from 'react'
 import {QuizData} from './QuizData'
 import Pic from './pic_man.png'
 
-class QuizComponent extends Component {
+class QuizComponent extends Component { 
 state = {
     userAnswer:null,
     currentIndex:0,
     options: [],    
     quizEnd: false,
     score: 0,
-    disabled: true
+    disabled: true 
 }
     
 

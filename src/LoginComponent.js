@@ -33,7 +33,7 @@ export class LoginComponent extends React.Component {
     return (
       <div>
         <h3>Login</h3>
-        <span style={format}>{this.state.err != '' ? this.state.err : ''}</span>
+        <span style={format}>{this.state.err != '' ? this.state.err : ''}</span> 
         <form method="post" onSubmit={this.login.bind(this)}>
           Username <input type="text" name="username" />
           <br />
