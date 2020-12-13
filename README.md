@@ -1,3 +1,5 @@
+A quiz application with react JS, which is under development ... 👨‍💻
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -23,10 +23,4 @@ export const QuizData = [
         options: [`Reponse 1`, `Reponse 2`, `Reponse 3`, `Reponse 4`],
         answer: `Reponse 4`
     },
-    {
-        id: 4,
-        question: `Question 5 ?`,
-        options: [`Reponse 1`, `Reponse 2`, `Reponse 3`, `Reponse 4`],
-        answer: `Reponse 5`
-    },
 ]
